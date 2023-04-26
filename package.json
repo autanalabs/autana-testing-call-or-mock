@@ -1,6 +1,6 @@
 {
   "name": "autana-testing-call-or-mock",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Node to call a link-in node depending if the flow is running on runtime mode o testing mode",
   "main": "index.js",
   "node-red": {
