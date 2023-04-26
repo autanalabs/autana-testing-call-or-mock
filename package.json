@@ -1,28 +1,29 @@
 {
   "name": "autana-testing-call-or-mock",
-  "version": "1.0.5",
-  "description": "Node to call a link-in node depending if the flow is running on runtime mode o testing mode",
-  "main": "index.js",
-  "node-red": {
-    "nodes": {
-        "call-or-mock": "index.js"
-    }
+  "version": "1.0.6",
+  "description": "Node-RED node for call or mock",
+  "keywords": [
+    "node-red",
+    "node-red-nodegen",
+    "testing", 
+    "test", 
+    "mock", 
+    "mocking", 
+    "call"
+  ],
+  "engines": {
+    "node": ">=12.0.0"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "node-red": {
+    "version": ">=1.3.7",
+    "nodes": {
+      "call or mock": "subflow.js"
+    }
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/autanalabs/autana-testing-call-or-mock.git"
   },
-  "keywords": [
-    "node-red",
-    "testing",
-    "tests",
-    "test",
-    "mock",
-    "mocking"
-  ],
   "author": "Gilbert Gonzalez <gb@autanalabs.com> (http://autanalabs.com)",
   "license": "Apache-2.0",
   "bugs": {

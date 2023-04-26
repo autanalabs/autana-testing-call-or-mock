@@ -1,5 +1,5 @@
 {
-    "id": "call or mock",
+    "id": "6c07c258fd294389",
     "type": "subflow",
     "name": "call or mock",
     "info": "<p>Calls a flow that starts with a named <code>link in</code> node and finish with a <code>link out</code> node configured\n       in 'return' mode, and passes on the response. (a function flow)</p>\n   <h3>Inputs</h3>\n   <dl class=\"message-properties\">\n      <dt class=\"optional\">target<span class=\"property-type\">string</span></dt>\n      <dd>\n         <p>The name of the <code>link in</code> node to call on normal/runtime execution mode.</p>\n         <p>To enable the test execution mode (Unit Tests), You must set the <code>Global.runtime_profile</code> variable to <code>\"TEST\"</code>.<p>\n         <p>If test execution mode is enabled, the suffix <code>.mock</code> is added to <code>target</code> before to perform the call.<p>\n      </dd>\n   </dl>\n\n   <h3>Details</h3>\n\n   <p>The <code>target link in</code> node can be placed on any tab.</p>\n\n   <p>When this node receives a message, it is passed to the connected <code>target link in</code> node.\n   <p>It then waits for a response which it then sends on.</p>\n   <p>If no response is received within the configured timeout, default 30 seconds, the node\n       will log an error that can be caught using the <code>catch</code> node.</p>\n   <p>\n    <ul>\n      <li>If there is a <code>link in</code> node with <code>target</code> name, it will be called</li>\n      <li>If there are two or more <code>link in</code> nodes with the same <code>target</code> name, an error will be raised</li>\n      <li>The <code>link call</code> cannot call a <code>target link in</code> node inside a subflow</li>\n    </ul>\n    </p>\n  ",
@@ -37,9 +37,9 @@
     "meta": {
         "module": "autana-testing-call-or-mock",
         "type": "call or mock",
-        "version": "1.0.5",
+        "version": "1.0.6",
         "author": "gb@autanalabs.com",
-        "keywords": "testing, test, tests, mock, mocking, call",
+        "keywords": "testing, test, mock, mocking, call",
         "license": "Apache-2.0"
     },
     "color": "#dfdfdf",
