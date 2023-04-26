@@ -37,7 +37,7 @@
     "meta": {
         "module": "autana-testing-call-or-mock",
         "type": "call or mock",
-        "version": "1.0.4",
+        "version": "1.0.5",
         "author": "gb@autanalabs.com",
         "keywords": "testing, test, tests, mock, mocking, call",
         "license": "Apache-2.0"
