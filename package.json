@@ -1,6 +1,6 @@
 {
   "name": "autana-testing-call-or-mock",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Node-RED node for call or mock",
   "keywords": [
     "node-red",
@@ -9,7 +9,8 @@
     "test", 
     "mock", 
     "mocking", 
-    "call"
+    "call",
+    "autana"
   ],
   "engines": {
     "node": ">=12.0.0"
